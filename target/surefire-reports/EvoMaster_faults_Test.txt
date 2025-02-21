@@ -1,10 +1,12 @@
 -------------------------------------------------------------------------------
-Test set: unit4cases.EvoMaster_successes_Test
+Test set: EvoMaster_faults_Test
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 3.896 sec <<< FAILURE!
-test_0(unit4cases.EvoMaster_successes_Test)  Time elapsed: 2.042 sec  <<< FAILURE!
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 5.413 sec <<< FAILURE!
+test_0_with500(EvoMaster_faults_Test)  Time elapsed: 1.808 sec  <<< FAILURE!
 java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <401>.
+JSON path 'errorMessage' doesn't match.
+Expected: a string containing "Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"d65d503338270\"}"
+  Actual: Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"eb48d1eac772e\"}
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -16,9 +18,6 @@ Expected status code <200> but was <401>.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -26,17 +25,14 @@ Expected status code <200> but was <401>.
 	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at unit4cases.EvoMaster_successes_Test.test_0(EvoMaster_successes_Test.java:74)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at EvoMaster_faults_Test.test_0_with500(EvoMaster_faults_Test.java:79)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
@@ -48,9 +44,11 @@ Expected status code <200> but was <401>.
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-test_1(unit4cases.EvoMaster_successes_Test)  Time elapsed: 0.091 sec  <<< FAILURE!
+test_2_with500(EvoMaster_faults_Test)  Time elapsed: 2.066 sec  <<< FAILURE!
 java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <401>.
+JSON path 'errorMessage' doesn't match.
+Expected: a string containing "Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"78d73d02030e4\"}"
+  Actual: Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"8653487b764aa\"}
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -68,11 +66,13 @@ Expected status code <200> but was <401>.
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at unit4cases.EvoMaster_successes_Test.test_1(EvoMaster_successes_Test.java:92)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at EvoMaster_faults_Test.test_2_with500(EvoMaster_faults_Test.java:138)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
@@ -84,9 +84,11 @@ Expected status code <200> but was <401>.
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-test_2(unit4cases.EvoMaster_successes_Test)  Time elapsed: 0.131 sec  <<< FAILURE!
+test_1_with500(EvoMaster_faults_Test)  Time elapsed: 1.538 sec  <<< FAILURE!
 java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <401>.
+JSON path 'errorMessage' doesn't match.
+Expected: a string containing "Response code: 400\tError response: {\"name\":\"VALIDATION_ERROR\",\"message\":\"Invalid request - see details\",\"debug_id\":\"b79066801c8e0\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"details\":[{\"field\":\"/amount\",\"location\":\"body\",\"issue\":\"Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\"}]}"
+  Actual: Response code: 400\tError response: {\"name\":\"VALIDATION_ERROR\",\"message\":\"Invalid request - see details\",\"debug_id\":\"2e319b3b4b627\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"details\":[{\"field\":\"/amount\",\"location\":\"body\",\"issue\":\"Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\"}]}
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -104,11 +106,13 @@ Expected status code <200> but was <401>.
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at unit4cases.EvoMaster_successes_Test.test_2(EvoMaster_successes_Test.java:112)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at EvoMaster_faults_Test.test_1_with500(EvoMaster_faults_Test.java:110)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
