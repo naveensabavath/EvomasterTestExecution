@@ -15,6 +15,11 @@ faultsUrl="$faults_tests_cdnUrl"
 successUrl="$successes_tests_cdnUrl"
 othersUrl="$others_tests_cdnUrl"
 
+# Print values for debugging
+echo "faultsUrl: $faultsUrl"
+echo "successUrl: $successUrl"
+echo "othersUrl: $othersUrl"
+
 # List of relative file URLs (without base URL)
 URLS=("$faultsUrl" "$successUrl" "$othersUrl")  # Adding all three
 
