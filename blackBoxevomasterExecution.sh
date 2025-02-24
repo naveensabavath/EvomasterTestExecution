@@ -42,26 +42,9 @@ cd ..
 echo "All files processed."
 
 
+sleep 120
+
 FILES_DEST_DIR="src/test/java"
-
-# Ensure fresh repo pull by deleting existing directory
-#if [ -d "EvomasterTestExecution" ]; then
-#    echo "Deleting existing repository folder..."
-#    rm -rf EvomasterTestExecution
-#fi
-
-# Clone the repository
-#echo "Cloning repository..."
-#git clone -b "$BRANCH" "$REPO_URL"
-#cd EvomasterTestExecution || exit
-
-# Delete existing test files if present
-#if [ -d "$DEST_DIR" ] && [ "$(ls -A "$DEST_DIR")" ]; then
-#    echo "Deleting existing test files..."
-#    rm -rf "$DEST_DIR"/*
-#fi
-
-
 
 
 # Build the project with Maven (without tests)
@@ -72,6 +55,10 @@ mvn clean install -DskipTests || echo "Maven build failed but continuing..."
 echo "Copying test files..."
 mkdir -p "$FILES_DEST_DIR"
 cp -r "$DEST_DIR"/* "$FILES_DEST_DIR"
+
+
+
+sleep 120
 
 # Run tests and capture output
 echo "Running tests..."
