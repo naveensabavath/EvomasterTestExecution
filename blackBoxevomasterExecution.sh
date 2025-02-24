@@ -4,26 +4,50 @@
 #REPO_URL="git@github.com:naveensabavath/EvomasterTestExecution.git"
 #BRANCH="main"
 
-# Set the base CDN URL
-BASE_URL="https://cdn.aidtaas.com"
-
 # Set destination directory
 DEST_DIR="evomasterGeneratedTestCases"
-mkdir -p "$DEST_DIR"  # Ensure the directory exists
+mkdir -p "$DEST_DIR"
+
+# Login API details
+LOGIN_URL="https://ig.aidtaas.com/mobius-iam-service/v1.0/login"
+USERNAME="aidtaas@gaiansolutions.com"
+PASSWORD="Gaian@123"
+PRODUCT_ID="c2255be4-ddf6-449e-a1e0-b4f7f9a2b636"
 
 # Define output file
 OUTPUT_FILE="urls_debug.txt"
 
+# Fetch access token
+echo "Fetching access token..."
+AUTH_RESPONSE=$(curl --silent --location "$LOGIN_URL" \
+    --header 'Content-Type: application/json' \
+    --data-raw "{
+        \"userName\": \"$USERNAME\",
+        \"password\": \"$PASSWORD\",
+        \"productId\": \"$PRODUCT_ID\",
+        \"requestType\": \"TENANT\"
+    }")
 
-faultsUrl=$faults_tests_cdnUrl
-successUrl=$successes_tests_cdnUrl
-othersUrl=$others_tests_cdnUrl
+ACCESS_TOKEN=$(echo "$AUTH_RESPONSE" | grep -oP '(?<="accessToken":")[^"]+')
+
+# Validate if token was extracted
+if [[ -z "$ACCESS_TOKEN" ]]; then
+    echo "Error: Failed to retrieve access token."
+    exit 1
+fi
+
+echo "Access token retrieved successfully."
+
+
+FAULTS_URL=$faults_tests_url
+SUCCESS_URL=$successes_tests_url
+OTHERS_URL=$others_tests_url
 
 
 # Write the variable values to the file
-echo "Faults URL: $faultsUrl" > "$OUTPUT_FILE"
-echo "Success URL: $successUrl" >> "$OUTPUT_FILE"
-echo "Others URL: $othersUrl" >> "$OUTPUT_FILE"
+echo "Faults URL: $FAULTS_URL" > "$OUTPUT_FILE"
+echo "Success URL: $SUCCESS_URL" >> "$OUTPUT_FILE"
+echo "Others URL: $OTHERS_URL" >> "$OUTPUT_FILE"
 
 
 # Print values for debugging
@@ -33,29 +57,36 @@ echo "othersUrl: $othersUrl"
 
 # List of relative file URLs (without base URL)
 URLS=("$faultsUrl" "$successUrl" "$othersUrl")  # Adding all three
+NAMES=("Evomaster_faults_Test.java" "Evomaster_success_Test.java" "Evomaster_others_Test.java")
 
 # Change to the destination directory
 cd "$DEST_DIR" || exit
 
-# Loop to download each file dynamically
-for RELATIVE_URL in "${URLS[@]}"; do
-    if [[ -n "$RELATIVE_URL" ]]; then  # Ensure URL is not empty
-        FULL_URL="${BASE_URL}${RELATIVE_URL}"  # Prepend base URL
-        FILE_NAME=$(basename "$RELATIVE_URL")  # Extract filename
-        wget -O "$FILE_NAME" "$FULL_URL"  # Download file
+# Loop through URLs
+for i in "${!URLS[@]}"; do
+    URL="${URLS[i]}"
+    FILE_NAME="${NAMES[i]}"
 
-        # Check if file exists and is not empty
+    if [[ -n "$URL" ]]; then
+        echo "Downloading: $FILE_NAME from $URL"
+
+        curl --silent --location "$URL" \
+            --header "Authorization: Bearer $ACCESS_TOKEN" \
+            --output "$FILE_NAME"
+
+        # Validate if file was downloaded
         if [[ -s "$FILE_NAME" ]]; then
             echo "Downloaded: $FILE_NAME"
         else
             echo "Failed to download: $FILE_NAME"
+            rm -f "$FILE_NAME"  # Remove empty file
         fi
+    else
+        echo "Skipping: No URL provided for $FILE_NAME"
     fi
 done
 
-cd ..
-
-echo "All files processed."
+echo "Download process completed."
 
 
 sleep 120
