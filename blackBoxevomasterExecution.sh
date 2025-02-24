@@ -57,7 +57,7 @@ echo "othersUrl: $OTHERS_URL"
 
 # List of relative file URLs (without base URL)
 URLS=("$FAULTS_URL" "$SUCCESS_URL" "$OTHERS_URL")  # Adding all three
-NAMES=("Evomaster_faults_Test.java" "Evomaster_success_Test.java" "Evomaster_others_Test.java")
+NAMES=("EvoMaster_faults_Test.java" "EvoMaster_success_Test.java" "EvoMaster_others_Test.java")
 
 # Change to the destination directory
 cd "$DEST_DIR" || exit
@@ -91,7 +91,7 @@ echo "Download process completed."
 cd ..
 
 
-sleep 120
+#sleep 120
 
 FILES_DEST_DIR="src/test/java"
 
@@ -107,7 +107,7 @@ cp -r "$DEST_DIR"/* "$FILES_DEST_DIR"
 
 
 
-sleep 120
+#sleep 120
 
 # Run tests and capture output
 echo "Running tests..."
