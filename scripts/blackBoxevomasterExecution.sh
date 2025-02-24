@@ -4,9 +4,35 @@
 #REPO_URL="git@github.com:naveensabavath/EvomasterTestExecution.git"
 #BRANCH="main"
 
-# Set source and destination directories
-SRC_DIR=$output_dir
-DEST_DIR="src/test/java"
+# Set the base CDN URL
+BASE_URL="https://cdn.aidtaas.com"
+
+# Set destination directory
+DEST_DIR="evomasterGeneratedTestCases"
+mkdir -p "$DEST_DIR"  # Ensure the directory exists
+
+# List of relative file URLs (without base URL)
+URLS=("$faults_tests_cdnUrl" "$successes_tests_cdnUrl" "$others_tests_cdnUrl")
+
+# Change to the destination directory
+cd "$DEST_DIR" || exit
+
+# Loop to download each file dynamically
+for RELATIVE_URL in "${URLS[@]}"; do
+    if [[ -n "$RELATIVE_URL" ]]; then  # Ensure URL is not empty
+        FULL_URL="${BASE_URL}${RELATIVE_URL}"  # Prepend base URL
+        FILE_NAME=$(basename "$RELATIVE_URL")  # Extract filename
+        wget -O "$FILE_NAME" "$FULL_URL"  # Download file
+    fi
+done
+
+echo "All files downloaded to $DEST_DIR"
+
+
+cd ..
+
+
+FILES_DEST_DIR="src/test/java"
 
 # Ensure fresh repo pull by deleting existing directory
 #if [ -d "EvomasterTestExecution" ]; then
@@ -31,8 +57,8 @@ mvn clean install -DskipTests || echo "Maven build failed but continuing..."
 
 # Copy all generated test files to the Git repo's test directory
 echo "Copying test files..."
-mkdir -p "$DEST_DIR"
-cp -r "$SRC_DIR"/* "$DEST_DIR"
+mkdir -p "$FILES_DEST_DIR"
+cp -r "$DEST_DIR"/* "$FILES_DEST_DIR"
 
 # Run tests and capture output
 echo "Running tests..."
@@ -57,8 +83,8 @@ echo "=========================================================="
 
 
 # Remove test files after execution (NO GitHub Commit)
-echo "Deleting test files..."
-rm -rf "$DEST_DIR"/*
+#echo "Deleting test files..."
+#rm -rf "$DEST_DIR"/*
 
 echo "Script execution completed!"
 
