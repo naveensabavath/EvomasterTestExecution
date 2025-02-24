@@ -11,8 +11,11 @@ BASE_URL="https://cdn.aidtaas.com"
 DEST_DIR="evomasterGeneratedTestCases"
 mkdir -p "$DEST_DIR"  # Ensure the directory exists
 
+faultsUrl = $faults_tests_cdnUrl
+successUrl = $successes_tests_cdnUrl
+othersUrl = $others_tests_cdnUrl
 # List of relative file URLs (without base URL)
-URLS=("$faults_tests_cdnUrl" "$successes_tests_cdnUrl" "$others_tests_cdnUrl")
+URLS=("$faultsUrl" "$successUrl" "$othersUrl")  # Adding all three
 
 # Change to the destination directory
 cd "$DEST_DIR" || exit
@@ -25,6 +28,8 @@ for RELATIVE_URL in "${URLS[@]}"; do
         wget -O "$FILE_NAME" "$FULL_URL"  # Download file
     fi
 done
+
+cd ..
 
 echo "All files downloaded to $DEST_DIR"
 
