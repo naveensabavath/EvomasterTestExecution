@@ -51,12 +51,12 @@ echo "Others URL: $OTHERS_URL" >> "$OUTPUT_FILE"
 
 
 # Print values for debugging
-echo "faultsUrl: $faultsUrl"
-echo "successUrl: $successUrl"
-echo "othersUrl: $othersUrl"
+echo "faultsUrl: $FAULTS_URL"
+echo "successUrl: $SUCCESS_URL"
+echo "othersUrl: $OTHERS_URL"
 
 # List of relative file URLs (without base URL)
-URLS=("$faultsUrl" "$successUrl" "$othersUrl")  # Adding all three
+URLS=("$FAULTS_URL" "$SUCCESS_URL" "$OTHERS_URL")  # Adding all three
 NAMES=("Evomaster_faults_Test.java" "Evomaster_success_Test.java" "Evomaster_others_Test.java")
 
 # Change to the destination directory
