@@ -15,9 +15,9 @@ mkdir -p "$DEST_DIR"  # Ensure the directory exists
 OUTPUT_FILE="urls_debug.txt"
 
 
-faultsUrl="$faults_tests_cdnUrl"
-successUrl="$successes_tests_cdnUrl"
-othersUrl="$others_tests_cdnUrl"
+faultsUrl=$faults_tests_cdnUrl
+successUrl=$successes_tests_cdnUrl
+othersUrl=$others_tests_cdnUrl
 
 
 # Write the variable values to the file
@@ -58,7 +58,7 @@ cd ..
 echo "All files processed."
 
 
-sleep 120
+#sleep 120
 
 FILES_DEST_DIR="src/test/java"
 
@@ -74,7 +74,7 @@ cp -r "$DEST_DIR"/* "$FILES_DEST_DIR"
 
 
 
-sleep 120
+#sleep 120
 
 # Run tests and capture output
 echo "Running tests..."
