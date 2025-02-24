@@ -11,9 +11,10 @@ BASE_URL="https://cdn.aidtaas.com"
 DEST_DIR="evomasterGeneratedTestCases"
 mkdir -p "$DEST_DIR"  # Ensure the directory exists
 
-faultsUrl = $faults_tests_cdnUrl
-successUrl = $successes_tests_cdnUrl
-othersUrl = $others_tests_cdnUrl
+faultsUrl="$faults_tests_cdnUrl"
+successUrl="$successes_tests_cdnUrl"
+othersUrl="$others_tests_cdnUrl"
+
 # List of relative file URLs (without base URL)
 URLS=("$faultsUrl" "$successUrl" "$othersUrl")  # Adding all three
 
@@ -26,12 +27,19 @@ for RELATIVE_URL in "${URLS[@]}"; do
         FULL_URL="${BASE_URL}${RELATIVE_URL}"  # Prepend base URL
         FILE_NAME=$(basename "$RELATIVE_URL")  # Extract filename
         wget -O "$FILE_NAME" "$FULL_URL"  # Download file
+
+        # Check if file exists and is not empty
+        if [[ -s "$FILE_NAME" ]]; then
+            echo "Downloaded: $FILE_NAME"
+        else
+            echo "Failed to download: $FILE_NAME"
+        fi
     fi
 done
 
 cd ..
 
-echo "All files downloaded to $DEST_DIR"
+echo "All files processed."
 
 
 FILES_DEST_DIR="src/test/java"
