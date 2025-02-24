@@ -58,7 +58,7 @@ cd ..
 echo "All files processed."
 
 
-#sleep 120
+sleep 120
 
 FILES_DEST_DIR="src/test/java"
 
@@ -74,7 +74,7 @@ cp -r "$DEST_DIR"/* "$FILES_DEST_DIR"
 
 
 
-#sleep 120
+sleep 120
 
 # Run tests and capture output
 echo "Running tests..."
