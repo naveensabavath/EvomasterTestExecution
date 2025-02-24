@@ -88,6 +88,8 @@ done
 
 echo "Download process completed."
 
+cd ..
+
 
 sleep 120
 
