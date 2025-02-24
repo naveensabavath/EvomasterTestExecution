@@ -11,9 +11,20 @@ BASE_URL="https://cdn.aidtaas.com"
 DEST_DIR="evomasterGeneratedTestCases"
 mkdir -p "$DEST_DIR"  # Ensure the directory exists
 
+# Define output file
+OUTPUT_FILE="urls_debug.txt"
+
+
 faultsUrl="$faults_tests_cdnUrl"
 successUrl="$successes_tests_cdnUrl"
 othersUrl="$others_tests_cdnUrl"
+
+
+# Write the variable values to the file
+echo "Faults URL: $faultsUrl" > "$OUTPUT_FILE"
+echo "Success URL: $successUrl" >> "$OUTPUT_FILE"
+echo "Others URL: $othersUrl" >> "$OUTPUT_FILE"
+
 
 # Print values for debugging
 echo "faultsUrl: $faultsUrl"
