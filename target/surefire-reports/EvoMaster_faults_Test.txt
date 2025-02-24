@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: EvoMaster_faults_Test
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 5.413 sec <<< FAILURE!
-test_0_with500(EvoMaster_faults_Test)  Time elapsed: 1.808 sec  <<< FAILURE!
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 4.524 sec <<< FAILURE!
+test_0_with500(EvoMaster_faults_Test)  Time elapsed: 1.689 sec  <<< FAILURE!
 java.lang.AssertionError: 1 expectation failed.
 JSON path 'errorMessage' doesn't match.
 Expected: a string containing "Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"d65d503338270\"}"
-  Actual: Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"eb48d1eac772e\"}
+  Actual: Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"430a860fd7761\"}
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -44,11 +44,11 @@ Expected: a string containing "Response code: 404\tError response: {\"name\":\"I
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-test_2_with500(EvoMaster_faults_Test)  Time elapsed: 2.066 sec  <<< FAILURE!
+test_2_with500(EvoMaster_faults_Test)  Time elapsed: 1.303 sec  <<< FAILURE!
 java.lang.AssertionError: 1 expectation failed.
 JSON path 'errorMessage' doesn't match.
 Expected: a string containing "Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"78d73d02030e4\"}"
-  Actual: Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"8653487b764aa\"}
+  Actual: Response code: 404\tError response: {\"name\":\"INVALID_RESOURCE_ID\",\"message\":\"Requested resource ID was not found.\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"debug_id\":\"a992a10b16ada\"}
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -84,11 +84,11 @@ Expected: a string containing "Response code: 404\tError response: {\"name\":\"I
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-test_1_with500(EvoMaster_faults_Test)  Time elapsed: 1.538 sec  <<< FAILURE!
+test_1_with500(EvoMaster_faults_Test)  Time elapsed: 1.531 sec  <<< FAILURE!
 java.lang.AssertionError: 1 expectation failed.
 JSON path 'errorMessage' doesn't match.
 Expected: a string containing "Response code: 400\tError response: {\"name\":\"VALIDATION_ERROR\",\"message\":\"Invalid request - see details\",\"debug_id\":\"b79066801c8e0\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"details\":[{\"field\":\"/amount\",\"location\":\"body\",\"issue\":\"Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\"}]}"
-  Actual: Response code: 400\tError response: {\"name\":\"VALIDATION_ERROR\",\"message\":\"Invalid request - see details\",\"debug_id\":\"2e319b3b4b627\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"details\":[{\"field\":\"/amount\",\"location\":\"body\",\"issue\":\"Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\"}]}
+  Actual: Response code: 400\tError response: {\"name\":\"VALIDATION_ERROR\",\"message\":\"Invalid request - see details\",\"debug_id\":\"8d5af0cbc7cfb\",\"information_link\":\"https://developer.paypal.com/docs/api/payments/#errors\",\"details\":[{\"field\":\"/amount\",\"location\":\"body\",\"issue\":\"Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\"}]}
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)

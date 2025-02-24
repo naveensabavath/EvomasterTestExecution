@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="78" failures="0" name="EvoMaster_others_Test" time="20.723" errors="0" skipped="0">
+<testsuite tests="78" failures="0" name="EvoMaster_others_Test" time="13.155" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="21.0.6+7-Ubuntu-122.04.1"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/gaian/Desktop/Naveen/Mobius/EvomasterTestExecution"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/gaian/Desktop/ownRepoShellScript/EvomasterTestExecution"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/gaian/Desktop/Naveen/Mobius/EvomasterTestExecution"/>
+    <property name="user.dir" value="/home/gaian/Desktop/ownRepoShellScript/EvomasterTestExecution"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="21.0.6+7-Ubuntu-122.04.1"/>
     <property name="os.arch" value="amd64"/>
@@ -57,82 +57,82 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="EvoMaster_others_Test" name="test_10" time="0.32"/>
+  <testcase classname="EvoMaster_others_Test" name="test_10" time="0.234"/>
   <testcase classname="EvoMaster_others_Test" name="test_11" time="0.27"/>
-  <testcase classname="EvoMaster_others_Test" name="test_12" time="0.359"/>
-  <testcase classname="EvoMaster_others_Test" name="test_13" time="0.198"/>
-  <testcase classname="EvoMaster_others_Test" name="test_14" time="0.179"/>
-  <testcase classname="EvoMaster_others_Test" name="test_15" time="0.236"/>
+  <testcase classname="EvoMaster_others_Test" name="test_12" time="0.165"/>
+  <testcase classname="EvoMaster_others_Test" name="test_13" time="0.172"/>
+  <testcase classname="EvoMaster_others_Test" name="test_14" time="0.14"/>
+  <testcase classname="EvoMaster_others_Test" name="test_15" time="0.112"/>
   <testcase classname="EvoMaster_others_Test" name="test_16" time="0.144"/>
-  <testcase classname="EvoMaster_others_Test" name="test_17" time="0.171"/>
-  <testcase classname="EvoMaster_others_Test" name="test_18" time="0.166"/>
-  <testcase classname="EvoMaster_others_Test" name="test_19" time="0.137"/>
-  <testcase classname="EvoMaster_others_Test" name="test_20" time="0.139"/>
-  <testcase classname="EvoMaster_others_Test" name="test_21" time="0.144"/>
-  <testcase classname="EvoMaster_others_Test" name="test_22" time="0.324"/>
-  <testcase classname="EvoMaster_others_Test" name="test_23" time="0.269"/>
-  <testcase classname="EvoMaster_others_Test" name="test_24" time="0.135"/>
-  <testcase classname="EvoMaster_others_Test" name="test_25" time="0.223"/>
-  <testcase classname="EvoMaster_others_Test" name="test_26" time="0.161"/>
-  <testcase classname="EvoMaster_others_Test" name="test_27" time="0.126"/>
-  <testcase classname="EvoMaster_others_Test" name="test_28" time="0.122"/>
-  <testcase classname="EvoMaster_others_Test" name="test_29" time="0.187"/>
-  <testcase classname="EvoMaster_others_Test" name="test_30" time="0.181"/>
-  <testcase classname="EvoMaster_others_Test" name="test_31" time="0.206"/>
-  <testcase classname="EvoMaster_others_Test" name="test_32" time="0.301"/>
-  <testcase classname="EvoMaster_others_Test" name="test_33" time="0.311"/>
-  <testcase classname="EvoMaster_others_Test" name="test_34" time="0.264"/>
-  <testcase classname="EvoMaster_others_Test" name="test_35" time="0.401"/>
-  <testcase classname="EvoMaster_others_Test" name="test_36" time="0.256"/>
-  <testcase classname="EvoMaster_others_Test" name="test_37" time="0.44"/>
-  <testcase classname="EvoMaster_others_Test" name="test_38" time="0.405"/>
-  <testcase classname="EvoMaster_others_Test" name="test_39" time="0.444"/>
-  <testcase classname="EvoMaster_others_Test" name="test_40" time="0.368"/>
-  <testcase classname="EvoMaster_others_Test" name="test_41" time="0.6"/>
-  <testcase classname="EvoMaster_others_Test" name="test_42" time="0.233"/>
-  <testcase classname="EvoMaster_others_Test" name="test_43" time="0.322"/>
-  <testcase classname="EvoMaster_others_Test" name="test_44" time="0.236"/>
-  <testcase classname="EvoMaster_others_Test" name="test_45" time="0.331"/>
-  <testcase classname="EvoMaster_others_Test" name="test_46" time="0.187"/>
-  <testcase classname="EvoMaster_others_Test" name="test_47" time="0.135"/>
-  <testcase classname="EvoMaster_others_Test" name="test_48" time="0.491"/>
-  <testcase classname="EvoMaster_others_Test" name="test_49" time="0.165"/>
-  <testcase classname="EvoMaster_others_Test" name="test_50" time="0.165"/>
-  <testcase classname="EvoMaster_others_Test" name="test_51" time="0.491"/>
-  <testcase classname="EvoMaster_others_Test" name="test_52" time="0.409"/>
-  <testcase classname="EvoMaster_others_Test" name="test_53" time="0.351"/>
-  <testcase classname="EvoMaster_others_Test" name="test_54" time="0.323"/>
-  <testcase classname="EvoMaster_others_Test" name="test_55" time="0.172"/>
-  <testcase classname="EvoMaster_others_Test" name="test_56" time="0.607"/>
-  <testcase classname="EvoMaster_others_Test" name="test_57" time="0.465"/>
-  <testcase classname="EvoMaster_others_Test" name="test_58" time="0.14"/>
-  <testcase classname="EvoMaster_others_Test" name="test_59" time="0.2"/>
-  <testcase classname="EvoMaster_others_Test" name="test_60" time="0.205"/>
-  <testcase classname="EvoMaster_others_Test" name="test_61" time="0.104"/>
-  <testcase classname="EvoMaster_others_Test" name="test_62" time="0.401"/>
-  <testcase classname="EvoMaster_others_Test" name="test_63" time="0.732"/>
-  <testcase classname="EvoMaster_others_Test" name="test_64" time="0.376"/>
-  <testcase classname="EvoMaster_others_Test" name="test_65" time="0.131"/>
-  <testcase classname="EvoMaster_others_Test" name="test_66" time="0.322"/>
-  <testcase classname="EvoMaster_others_Test" name="test_67" time="0.13"/>
-  <testcase classname="EvoMaster_others_Test" name="test_68" time="0.119"/>
-  <testcase classname="EvoMaster_others_Test" name="test_69" time="0.142"/>
-  <testcase classname="EvoMaster_others_Test" name="test_70" time="0.126"/>
-  <testcase classname="EvoMaster_others_Test" name="test_71" time="0.215"/>
-  <testcase classname="EvoMaster_others_Test" name="test_72" time="0.15"/>
-  <testcase classname="EvoMaster_others_Test" name="test_73" time="0.429"/>
-  <testcase classname="EvoMaster_others_Test" name="test_74" time="0.29"/>
-  <testcase classname="EvoMaster_others_Test" name="test_75" time="0.406"/>
-  <testcase classname="EvoMaster_others_Test" name="test_76" time="0.123"/>
-  <testcase classname="EvoMaster_others_Test" name="test_77" time="0.038"/>
-  <testcase classname="EvoMaster_others_Test" name="test_0" time="0.111"/>
-  <testcase classname="EvoMaster_others_Test" name="test_1" time="0.077"/>
-  <testcase classname="EvoMaster_others_Test" name="test_2" time="0.209"/>
-  <testcase classname="EvoMaster_others_Test" name="test_3" time="0.242"/>
-  <testcase classname="EvoMaster_others_Test" name="test_4" time="0.146"/>
-  <testcase classname="EvoMaster_others_Test" name="test_5" time="0.296"/>
-  <testcase classname="EvoMaster_others_Test" name="test_6" time="0.639"/>
-  <testcase classname="EvoMaster_others_Test" name="test_7" time="0.39"/>
-  <testcase classname="EvoMaster_others_Test" name="test_8" time="0.354"/>
-  <testcase classname="EvoMaster_others_Test" name="test_9" time="0.21"/>
+  <testcase classname="EvoMaster_others_Test" name="test_17" time="0.145"/>
+  <testcase classname="EvoMaster_others_Test" name="test_18" time="0.25"/>
+  <testcase classname="EvoMaster_others_Test" name="test_19" time="0.255"/>
+  <testcase classname="EvoMaster_others_Test" name="test_20" time="0.115"/>
+  <testcase classname="EvoMaster_others_Test" name="test_21" time="0.209"/>
+  <testcase classname="EvoMaster_others_Test" name="test_22" time="0.094"/>
+  <testcase classname="EvoMaster_others_Test" name="test_23" time="0.152"/>
+  <testcase classname="EvoMaster_others_Test" name="test_24" time="0.137"/>
+  <testcase classname="EvoMaster_others_Test" name="test_25" time="0.147"/>
+  <testcase classname="EvoMaster_others_Test" name="test_26" time="0.257"/>
+  <testcase classname="EvoMaster_others_Test" name="test_27" time="0.283"/>
+  <testcase classname="EvoMaster_others_Test" name="test_28" time="0.233"/>
+  <testcase classname="EvoMaster_others_Test" name="test_29" time="0.118"/>
+  <testcase classname="EvoMaster_others_Test" name="test_30" time="0.17"/>
+  <testcase classname="EvoMaster_others_Test" name="test_31" time="0.174"/>
+  <testcase classname="EvoMaster_others_Test" name="test_32" time="0.162"/>
+  <testcase classname="EvoMaster_others_Test" name="test_33" time="0.138"/>
+  <testcase classname="EvoMaster_others_Test" name="test_34" time="0.184"/>
+  <testcase classname="EvoMaster_others_Test" name="test_35" time="0.101"/>
+  <testcase classname="EvoMaster_others_Test" name="test_36" time="0.315"/>
+  <testcase classname="EvoMaster_others_Test" name="test_37" time="0.129"/>
+  <testcase classname="EvoMaster_others_Test" name="test_38" time="0.157"/>
+  <testcase classname="EvoMaster_others_Test" name="test_39" time="0.107"/>
+  <testcase classname="EvoMaster_others_Test" name="test_40" time="0.157"/>
+  <testcase classname="EvoMaster_others_Test" name="test_41" time="0.115"/>
+  <testcase classname="EvoMaster_others_Test" name="test_42" time="0.234"/>
+  <testcase classname="EvoMaster_others_Test" name="test_43" time="0.104"/>
+  <testcase classname="EvoMaster_others_Test" name="test_44" time="0.132"/>
+  <testcase classname="EvoMaster_others_Test" name="test_45" time="0.126"/>
+  <testcase classname="EvoMaster_others_Test" name="test_46" time="0.272"/>
+  <testcase classname="EvoMaster_others_Test" name="test_47" time="0.143"/>
+  <testcase classname="EvoMaster_others_Test" name="test_48" time="0.169"/>
+  <testcase classname="EvoMaster_others_Test" name="test_49" time="0.134"/>
+  <testcase classname="EvoMaster_others_Test" name="test_50" time="0.193"/>
+  <testcase classname="EvoMaster_others_Test" name="test_51" time="0.141"/>
+  <testcase classname="EvoMaster_others_Test" name="test_52" time="0.141"/>
+  <testcase classname="EvoMaster_others_Test" name="test_53" time="0.127"/>
+  <testcase classname="EvoMaster_others_Test" name="test_54" time="0.176"/>
+  <testcase classname="EvoMaster_others_Test" name="test_55" time="0.135"/>
+  <testcase classname="EvoMaster_others_Test" name="test_56" time="0.255"/>
+  <testcase classname="EvoMaster_others_Test" name="test_57" time="0.155"/>
+  <testcase classname="EvoMaster_others_Test" name="test_58" time="0.161"/>
+  <testcase classname="EvoMaster_others_Test" name="test_59" time="0.169"/>
+  <testcase classname="EvoMaster_others_Test" name="test_60" time="0.181"/>
+  <testcase classname="EvoMaster_others_Test" name="test_61" time="0.125"/>
+  <testcase classname="EvoMaster_others_Test" name="test_62" time="0.254"/>
+  <testcase classname="EvoMaster_others_Test" name="test_63" time="0.134"/>
+  <testcase classname="EvoMaster_others_Test" name="test_64" time="0.14"/>
+  <testcase classname="EvoMaster_others_Test" name="test_65" time="0.165"/>
+  <testcase classname="EvoMaster_others_Test" name="test_66" time="0.162"/>
+  <testcase classname="EvoMaster_others_Test" name="test_67" time="0.179"/>
+  <testcase classname="EvoMaster_others_Test" name="test_68" time="0.144"/>
+  <testcase classname="EvoMaster_others_Test" name="test_69" time="0.194"/>
+  <testcase classname="EvoMaster_others_Test" name="test_70" time="0.115"/>
+  <testcase classname="EvoMaster_others_Test" name="test_71" time="0.159"/>
+  <testcase classname="EvoMaster_others_Test" name="test_72" time="0.102"/>
+  <testcase classname="EvoMaster_others_Test" name="test_73" time="0.189"/>
+  <testcase classname="EvoMaster_others_Test" name="test_74" time="0.132"/>
+  <testcase classname="EvoMaster_others_Test" name="test_75" time="0.096"/>
+  <testcase classname="EvoMaster_others_Test" name="test_76" time="0.204"/>
+  <testcase classname="EvoMaster_others_Test" name="test_77" time="0.099"/>
+  <testcase classname="EvoMaster_others_Test" name="test_0" time="0.219"/>
+  <testcase classname="EvoMaster_others_Test" name="test_1" time="0.15"/>
+  <testcase classname="EvoMaster_others_Test" name="test_2" time="0.205"/>
+  <testcase classname="EvoMaster_others_Test" name="test_3" time="0.159"/>
+  <testcase classname="EvoMaster_others_Test" name="test_4" time="0.226"/>
+  <testcase classname="EvoMaster_others_Test" name="test_5" time="0.157"/>
+  <testcase classname="EvoMaster_others_Test" name="test_6" time="0.122"/>
+  <testcase classname="EvoMaster_others_Test" name="test_7" time="0.189"/>
+  <testcase classname="EvoMaster_others_Test" name="test_8" time="0.304"/>
+  <testcase classname="EvoMaster_others_Test" name="test_9" time="0.142"/>
 </testsuite>

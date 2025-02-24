@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="3" name="EvoMaster_faults_Test" time="5.412" errors="0" skipped="0">
+<testsuite tests="3" failures="3" name="EvoMaster_faults_Test" time="4.523" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="21.0.6+7-Ubuntu-122.04.1"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/gaian/Desktop/Naveen/Mobius/EvomasterTestExecution"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/gaian/Desktop/ownRepoShellScript/EvomasterTestExecution"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/gaian/Desktop/Naveen/Mobius/EvomasterTestExecution"/>
+    <property name="user.dir" value="/home/gaian/Desktop/ownRepoShellScript/EvomasterTestExecution"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="21.0.6+7-Ubuntu-122.04.1"/>
     <property name="os.arch" value="amd64"/>
@@ -57,15 +57,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="EvoMaster_faults_Test" name="test_0_with500" time="1.808">
+  <testcase classname="EvoMaster_faults_Test" name="test_0_with500" time="1.689">
     <failure message="1 expectation failed.
 JSON path &apos;errorMessage&apos; doesn&apos;t match.
 Expected: a string containing &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;d65d503338270\&quot;}&quot;
-  Actual: Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;eb48d1eac772e\&quot;}
+  Actual: Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;430a860fd7761\&quot;}
 " type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
 JSON path &apos;errorMessage&apos; doesn&apos;t match.
 Expected: a string containing &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;d65d503338270\&quot;}&quot;
-  Actual: Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;eb48d1eac772e\&quot;}
+  Actual: Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;430a860fd7761\&quot;}
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -118,18 +118,18 @@ Body:			&lt;none&gt;
 
 HTTP/1.1 500 Internal Server Error
 content-type: application/json
-date: Fri, 21 Feb 2025 10:46:38 GMT
-x-envoy-upstream-service-time: 1431
+date: Fri, 21 Feb 2025 13:27:06 GMT
+x-envoy-upstream-service-time: 1483
 server: istio-envoy
 transfer-encoding: chunked
 
 {
-    &quot;timestamp&quot;: 1740134798803,
+    &quot;timestamp&quot;: 1740144426480,
     &quot;origin&quot;: &quot;mobius-payment-service&quot;,
     &quot;errorCode&quot;: 5001,
-    &quot;errorMessage&quot;: &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;eb48d1eac772e\&quot;}&quot;,
+    &quot;errorMessage&quot;: &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;430a860fd7761\&quot;}&quot;,
     &quot;cause&quot;: {
-        &quot;message&quot;: &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;eb48d1eac772e\&quot;}&quot;,
+        &quot;message&quot;: &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;430a860fd7761\&quot;}&quot;,
         &quot;timestamp&quot;: 0
     },
     &quot;docUrl&quot;: &quot;https://mobiusdtaas.atlassian.net/wiki/spaces/EN/pages/2360868868/Mobius+Documentation+for+Common+Issues&quot;,
@@ -137,15 +137,15 @@ transfer-encoding: chunked
 }
 </system-out>
   </testcase>
-  <testcase classname="EvoMaster_faults_Test" name="test_2_with500" time="2.066">
+  <testcase classname="EvoMaster_faults_Test" name="test_2_with500" time="1.303">
     <failure message="1 expectation failed.
 JSON path &apos;errorMessage&apos; doesn&apos;t match.
 Expected: a string containing &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;78d73d02030e4\&quot;}&quot;
-  Actual: Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;8653487b764aa\&quot;}
+  Actual: Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;a992a10b16ada\&quot;}
 " type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
 JSON path &apos;errorMessage&apos; doesn&apos;t match.
 Expected: a string containing &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;78d73d02030e4\&quot;}&quot;
-  Actual: Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;8653487b764aa\&quot;}
+  Actual: Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;a992a10b16ada\&quot;}
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -196,18 +196,18 @@ Body:			&lt;none&gt;
 
 HTTP/1.1 500 Internal Server Error
 content-type: application/json
-date: Fri, 21 Feb 2025 10:46:40 GMT
-x-envoy-upstream-service-time: 1573
+date: Fri, 21 Feb 2025 13:27:07 GMT
+x-envoy-upstream-service-time: 1194
 server: istio-envoy
 transfer-encoding: chunked
 
 {
-    &quot;timestamp&quot;: 1740134800871,
+    &quot;timestamp&quot;: 1740144427818,
     &quot;origin&quot;: &quot;mobius-payment-service&quot;,
     &quot;errorCode&quot;: 5001,
-    &quot;errorMessage&quot;: &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;8653487b764aa\&quot;}&quot;,
+    &quot;errorMessage&quot;: &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;a992a10b16ada\&quot;}&quot;,
     &quot;cause&quot;: {
-        &quot;message&quot;: &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;8653487b764aa\&quot;}&quot;,
+        &quot;message&quot;: &quot;Response code: 404\tError response: {\&quot;name\&quot;:\&quot;INVALID_RESOURCE_ID\&quot;,\&quot;message\&quot;:\&quot;Requested resource ID was not found.\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;debug_id\&quot;:\&quot;a992a10b16ada\&quot;}&quot;,
         &quot;timestamp&quot;: 0
     },
     &quot;docUrl&quot;: &quot;https://mobiusdtaas.atlassian.net/wiki/spaces/EN/pages/2360868868/Mobius+Documentation+for+Common+Issues&quot;,
@@ -215,15 +215,15 @@ transfer-encoding: chunked
 }
 </system-out>
   </testcase>
-  <testcase classname="EvoMaster_faults_Test" name="test_1_with500" time="1.538">
+  <testcase classname="EvoMaster_faults_Test" name="test_1_with500" time="1.531">
     <failure message="1 expectation failed.
 JSON path &apos;errorMessage&apos; doesn&apos;t match.
 Expected: a string containing &quot;Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;b79066801c8e0\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}&quot;
-  Actual: Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;2e319b3b4b627\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}
+  Actual: Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;8d5af0cbc7cfb\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}
 " type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
 JSON path &apos;errorMessage&apos; doesn&apos;t match.
 Expected: a string containing &quot;Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;b79066801c8e0\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}&quot;
-  Actual: Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;2e319b3b4b627\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}
+  Actual: Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;8d5af0cbc7cfb\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -280,18 +280,18 @@ Body:
 
 HTTP/1.1 500 Internal Server Error
 content-type: application/json
-date: Fri, 21 Feb 2025 10:46:42 GMT
-x-envoy-upstream-service-time: 1420
+date: Fri, 21 Feb 2025 13:27:09 GMT
+x-envoy-upstream-service-time: 1445
 server: istio-envoy
 transfer-encoding: chunked
 
 {
-    &quot;timestamp&quot;: 1740134802463,
+    &quot;timestamp&quot;: 1740144429362,
     &quot;origin&quot;: &quot;mobius-payment-service&quot;,
     &quot;errorCode&quot;: 5001,
-    &quot;errorMessage&quot;: &quot;Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;2e319b3b4b627\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}&quot;,
+    &quot;errorMessage&quot;: &quot;Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;8d5af0cbc7cfb\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}&quot;,
     &quot;cause&quot;: {
-        &quot;message&quot;: &quot;Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;2e319b3b4b627\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}&quot;,
+        &quot;message&quot;: &quot;Response code: 400\tError response: {\&quot;name\&quot;:\&quot;VALIDATION_ERROR\&quot;,\&quot;message\&quot;:\&quot;Invalid request - see details\&quot;,\&quot;debug_id\&quot;:\&quot;8d5af0cbc7cfb\&quot;,\&quot;information_link\&quot;:\&quot;https://developer.paypal.com/docs/api/payments/#errors\&quot;,\&quot;details\&quot;:[{\&quot;field\&quot;:\&quot;/amount\&quot;,\&quot;location\&quot;:\&quot;body\&quot;,\&quot;issue\&quot;:\&quot;Cannot construct instance of `com.paypal.platform.payments.model.rest.common.Amount`, problem: INVALID_CURRENCY_AMOUNT_FORMAT\&quot;}]}&quot;,
         &quot;timestamp&quot;: 0
     },
     &quot;docUrl&quot;: &quot;https://mobiusdtaas.atlassian.net/wiki/spaces/EN/pages/2360868868/Mobius+Documentation+for+Common+Issues&quot;,
