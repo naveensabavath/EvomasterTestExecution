@@ -57,7 +57,7 @@ echo "othersUrl: $OTHERS_URL"
 
 # List of relative file URLs (without base URL)
 URLS=("$FAULTS_URL" "$SUCCESS_URL" "$OTHERS_URL")  # Adding all three
-NAMES=("EvoMaster_faults_Test.java" "EvoMaster_success_Test.java" "EvoMaster_others_Test.java")
+NAMES=("EvoMaster_faults_Test.java" "EvoMaster_successes_Test..java" "EvoMaster_others_Test.java")
 
 # Change to the destination directory
 cd "$DEST_DIR" || exit
